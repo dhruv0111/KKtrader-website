@@ -6,8 +6,8 @@ import GoogleMap from '../components/map/GoogleMap';
 
 const ContactPage: React.FC = () => {
   const whatsappLink = generateWhatsAppLink('General Inquiry');
-  const address = '123 Business Park, Industrial Area, City, State, 123456';
-  const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || 'AIzaSyC-2OjF_W0oyC6ZRC5P6YMAm9ct4R8VP8s';
+  const address = 'Times Square, Manhattan, New York, NY 10036, USA';
+  const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || '';
   
   return (
     <div className="min-h-screen">
@@ -55,9 +55,9 @@ const ContactPage: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-lg mb-1">KK Traders</h3>
                   <p className="text-gray-600">
-                    123 Business Park, Industrial Area<br />
-                    City, State, 123456<br />
-                    India
+                    Times Square<br />
+                    Manhattan, New York, NY 10036<br />
+                    USA
                   </p>
                 </div>
               </div>
@@ -76,15 +76,7 @@ const ContactPage: React.FC = () => {
             </div>
             
             <div className="bg-white rounded-lg overflow-hidden shadow-lg h-96">
-              {googleMapsApiKey ? (
-                <GoogleMap address={address} apiKey={googleMapsApiKey} />
-              ) : (
-                <div className="w-full h-full flex items-center justify-center bg-gray-100">
-                  <p className="text-gray-600 font-medium">
-                    Please add your Google Maps API key to the environment variables
-                  </p>
-                </div>
-              )}
+              <GoogleMap address={address} apiKey={googleMapsApiKey} />
             </div>
           </div>
         </div>
