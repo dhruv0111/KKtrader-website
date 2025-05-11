@@ -1,7 +1,7 @@
 import { CartItem } from '../types';
 
 export const generateWhatsAppLink = (items: CartItem[] | string): string => {
-  const phoneNumber = '919999999999'; // Replace with your actual WhatsApp number
+  const phoneNumber = '917042724880'; // Updated WhatsApp number
   
   if (typeof items === 'string') {
     // Handle string input for simple messages
