@@ -7,7 +7,7 @@ import GoogleMap from '../components/map/GoogleMap';
 const ContactPage: React.FC = () => {
   const whatsappLink = generateWhatsAppLink('General Inquiry');
   const address = 'Times Square, Manhattan, New York, NY 10036, USA';
-  const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || '';
+  const googleMapsApiKey = "AIzaSyC-2OjF_W0oyC6ZRC5P6YMAm9ct4R8VP8s";
   
   return (
     <div className="min-h-screen">
